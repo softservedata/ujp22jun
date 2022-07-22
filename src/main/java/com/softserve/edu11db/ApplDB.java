@@ -127,8 +127,8 @@ public final class ApplDB {
 		int columnCount = rs.getMetaData().getColumnCount();
 		// Resultset.getMetaData() get the information
 		for (int i = 1; i <= columnCount; i++) {
-			System.out.print(rs.getMetaData().getColumnName(i) + "\t");
-		    //System.out.print(rs.getMetaData().getColumnLabel(i) + "\t");
+			//System.out.print(rs.getMetaData().getColumnName(i) + "\t");
+		    System.out.print(rs.getMetaData().getColumnLabel(i) + "\t");
 		}
 		System.out.println();
 		//
