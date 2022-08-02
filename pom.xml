@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.softserve.edu</groupId>
-    <artifactId>ujp22jun</artifactId>
+    <artifactId>ujp22ioc</artifactId>
     <version>1.0</version>
 
     <packaging>jar</packaging>
@@ -26,12 +26,12 @@
     <dependencies>
 
         <!-- - - - - - Test - - - - - -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>junit</groupId>-->
+        <!--            <artifactId>junit</artifactId>-->
+        <!--            <version>4.13.2</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -98,13 +98,13 @@
         </dependency>
         -->
 
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-module-testng</artifactId>
-            <version>2.0.9</version>
-            <!--             <version>1.7.4</version>-->
-            <scope>test</scope>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.powermock</groupId>-->
+        <!--            <artifactId>powermock-module-testng</artifactId>-->
+        <!--            <version>2.0.9</version>-->
+        <!--            &lt;!&ndash;             <version>1.7.4</version>&ndash;&gt;-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.mockito</groupId>
@@ -148,6 +148,13 @@
             <scope>runtime</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.22</version>
+            <!--            <version>5.2.7.RELEASE</version>-->
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -180,21 +187,21 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
-                    <!-- <includes>-->
-                    <!-- <include>**/*.java</include>-->
-                    <!-- </includes>-->
+<!--                    <includes>-->
+<!--                        <include>**/*.java</include>-->
+<!--                    </includes>-->
                     <systemPropertyVariables>
                         <surefire.application.password>
                             ${application.password}
                         </surefire.application.password>
                     </systemPropertyVariables>
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
-                        <!-- <suiteXmlFile>testng2.xml</suiteXmlFile> -->
-                        <!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
-                        <!-- <suiteXmlFile>testng03par.xml</suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
-                    <reportsDirectory>${testng.reports.directory}</reportsDirectory>
+                    <!--                    <suiteXmlFiles>-->
+                    <!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                    <!-- <suiteXmlFile>testng2.xml</suiteXmlFile> -->
+                    <!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
+                    <!-- <suiteXmlFile>testng03par.xml</suiteXmlFile>-->
+                    <!--                    </suiteXmlFiles>-->
+                    <!--                    <reportsDirectory>${testng.reports.directory}</reportsDirectory>-->
                 </configuration>
             </plugin>
 
